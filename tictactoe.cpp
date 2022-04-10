@@ -17,7 +17,7 @@ void TicTacToe::drawTheBoardstate()
     char rowChar='A';
     char columnChar='1';
 
-    //A rail to create a cleared visual. It adjusts depending on the size of the board
+    //A rail to create a clearer visual. It adjusts depending on the size of the board
     auto doubleRail = [&]()
     {
         std::cout<<"=================";
@@ -94,7 +94,7 @@ eGameStatus TicTacToe::checkGameStatus()
         bool diagonalCheck = true;
         bool inversDiagonalCheck = true;
 
-        //horizontal and draw check
+        //horizontal and vertical check
         for (int row = 0;     row < options.currentSize;    row++)
         {
             rowCheck = true;
